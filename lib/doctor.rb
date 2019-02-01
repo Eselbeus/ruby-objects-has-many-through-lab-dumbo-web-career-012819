@@ -25,7 +25,7 @@ class Doctor
     self.appointments.map do |app|
       app.patient
     end
-    @patients = patients
+    
   end
 
   def new_appointment(patient, date)
