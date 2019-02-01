@@ -23,7 +23,6 @@ class Doctor
 
   def patients
     patients = @my_appointments.map do |app|
-      binding.pry
       app.patient
     end
     @patients = patients
