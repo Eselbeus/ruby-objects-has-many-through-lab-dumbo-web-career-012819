@@ -22,10 +22,7 @@ class Doctor
   end
 
   def patients
-    self.appointments.map do |app|
-      app.patient
-      binding.pry
-    end
+    self.appointments.map {|appo| appo.patient}
     
   end
 
