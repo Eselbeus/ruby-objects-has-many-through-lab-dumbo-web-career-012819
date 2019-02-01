@@ -1,7 +1,6 @@
 require 'pry'
 class Patient
-  attr_accessor :appointments, :doctors
-  attr_reader :name
+  attr_reader :name,:appointments, :doctors
 
   @@all = []
 
