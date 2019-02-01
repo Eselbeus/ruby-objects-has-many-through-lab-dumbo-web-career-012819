@@ -23,7 +23,7 @@ class Doctor
 
   def patients
     self.appointments.map {|appo| appo.patient}
-    
+    binding.pry
   end
 
   def new_appointment(patient, date)
