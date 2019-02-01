@@ -15,14 +15,14 @@ class Doctor
   end
 
   def appointments
-    my_appointments = Appointment.all.select do |app|
+   Appointment.all.select do |app|
       app.doctor == self
     end
-    @my_appointments = my_appointments
+   
   end
 
   def patients
-    patients = @my_appointments.map do |app|
+    self.appointments.map do |app|
       app.patient
     end
     @patients = patients
