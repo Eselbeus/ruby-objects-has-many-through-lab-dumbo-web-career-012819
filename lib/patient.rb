@@ -20,12 +20,15 @@ class Patient
     @appointments = appointments
   end
 
-
   def doctors
     doctors = @appointments.map do |app|
       app.doctor
     end
     @doctors = doctors
+  end
+  
+  def new_appointment(doctor, date)
+    Appointment.new(date, patient, self)
   end
 
 end
